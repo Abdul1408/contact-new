@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Get in touch</h2>
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" class="field" placeholder="Your Name">
+                        <div class="error-message" id="nameError">Name is required</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" class="field" placeholder="Your Email">
+                        <div class="error-message" id="emailError">Please enter a valid email</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="subject" class="field" placeholder="Subject">
+                        <div class="error-message" id="subjectError">Subject is required</div>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Message" id="message" class="field"></textarea>
+                        <div class="error-message" id="messageError">Message cannot be empty</div>
+                    </div>
+                    <button class="btn" type="submit">Send Message</button>
+                </form>
+                <div id="successMessage" class="success-message">
+                    Thank you! Your message has been sent successfully.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
